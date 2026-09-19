@@ -12,7 +12,8 @@ export type Department =
 export type EmployeeRole = "admin" | "hr" | "employee";
 
 export type EmployeeStatus = "active" | "inactive" | "on_leave";
-
+export type modalidad = "presencial" | "remoto" | "hibrido";
+export type estadoStatus = "abierta" |  "cerrada";
 // --- Entidad principal ---
 
 export interface Employee {
@@ -28,11 +29,24 @@ export interface Employee {
   avatarUrl?: string;
   phone?: string;
 }
+//Parcial 2
+export interface Vacancy {
+  id: number;
+  puesto: string;
+  departamento: Department;
+  modalidad: modalidad;
+  salario_ofrecido: number;
+  fecha_publicacion: string;
+  estado: estadoStatus;
+  candidatos_postulados: string;
+}
 
 // --- Tipos para creación y actualización ---
 
 export type CreateEmployeeDto = Omit<Employee, "id">;
 export type UpdateEmployeeDto = Partial<CreateEmployeeDto>;
+export type CreateVacancyDto = Omit<Vacancy, "id">;
+export type UpdateVacancyDto = Partial<CreateVacancyDto>;
 
 // --- Tipos de autenticación ---
 

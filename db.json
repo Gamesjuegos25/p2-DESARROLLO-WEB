@@ -67,5 +67,37 @@
       "status": "active",
       "role": "employee"
     }
+  ],
+  "vacancy": [
+    {
+      "id": 1,
+      "puesto": "Desarrollador Frontend",
+      "departamento": "Tecnología",
+      "modalidad": "remoto",
+      "salario_ofrecido": 8500,
+      "fecha_publicacion": "2026-09-01",
+      "estado": "abierta",
+      "candidatos_postulados": "12"
+    },
+    {
+      "id": 2,
+      "puesto": "Analista de RRHH",
+      "departamento": "Recursos Humanos",
+      "modalidad": "hibrido",
+      "salario_ofrecido": 7600,
+      "fecha_publicacion": "2026-08-20",
+      "estado": "abierta",
+      "candidatos_postulados": "8"
+    },
+    {
+      "id": 3,
+      "puesto": "Ejecutivo de Ventas",
+      "departamento": "Ventas",
+      "modalidad": "presencial",
+      "salario_ofrecido": 7200,
+      "fecha_publicacion": "2026-08-12",
+      "estado": "cerrada",
+      "candidatos_postulados": "15"
+    }
   ]
 }
